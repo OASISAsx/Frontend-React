@@ -1,0 +1,45 @@
+.fix {
+width: 700px;
+height: 640px;
+background: #2c2c2c;
+margin: auto;
+justify-content: center;
+text-align: center;
+padding: 40px 30px ;
+color: white;
+margin-top: 20px;
+border-radius: 10px;
+position: relative;
+
+}
+.input {
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin-top: 60px;
+    background: #3c3c3c;
+    color: aliceblue;
+    border: 1px solid white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.button{
+    width: 56%;
+    background: linear-gradient(144deg,#f262ff,#5465ff 50% , #2bf7af);
+    height: 50px;
+    border-radius: 50px;
+    text-shadow: 20px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.fixbut {
+    padding: 90px !important; 
+}
+.text {
+    font-size: 30px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}

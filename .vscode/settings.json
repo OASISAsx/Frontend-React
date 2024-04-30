@@ -1,0 +1,7 @@
+{
+  "powermode.enabled": true,
+  "powermode.presets": "simple-rift",
+  "powermode.explosions.enabled": true,
+  "powermode.shake.enabled": false,
+  "vscode-pets.petColor": "akita"
+}

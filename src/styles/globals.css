@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Sans+Thai+Looped:wght@400;600&family=Noto+Sans+Thai:wght@300;400&family=Trirong:wght@300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+
+  font-family: "Noto Sans Thai", sans-serif;
+}
+.body {
+  background: white;
+}
+.pretext {
+  color: #fff;
+  background: #0652dd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 10vw;
+  background-color: #ffffff; /* สีพื้นหลังของ Header */
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 0; /* ทำให้ .navbar ชิดขวา */
+  background-color: #ffffff;
+  box-shadow: 0px 6px 4px rgba(71, 77, 241, 0.1);
+}
+
+.shadowavatar {
+  box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.13);
+  border: 3px solid #0aa1ff;
+}
+.menu ul li {
+  display: inline-block;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 80px;
+  align-items: right;
+  color: black;
+}
+
+.login-btn {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #2679ff;
+  box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.13);
+  padding: 10px 30px;
+  margin-right: 50px;
+}
+
+.banner {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 25%;
+  left: 150px;
+  color: #fff;
+}
+
+.btn-group {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.btn-group .signup-btn {
+  cursor: pointer;
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 32px;
+  background-color: #ffa037;
+  padding: 15px 50px;
+}
+
+.btn-group span {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  margin: auto 20px;
+  cursor: pointer;
+}
+
+.container {
+  width: 130vw;
+  margin: 0 auto;
+  display: flex;
+}
+.sidebars {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+.btn-primary {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 30px;
+  align-items: right;
+  background-color: #2679ff;
+  box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.13);
+  padding: 12px 20px;
+  margin-left: 190px;
+}
+.product {
+  width: 80%;
+  padding: 10px;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 22px;
+  grid-gap: 10px;
+}
+.sidebar-search {
+  padding: 10px;
+  border: 2px solid transparent;
+  width: 100%;
+  font-size: 1.2vw;
+  outline: none;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+.sidebar-search:focus {
+  border: 2px solid #0aa1ff;
+}
+.sidebar-items {
+  background: #dfdfdf;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  color: #000;
+  transition: 300ms;
+  font-size: 1.2vw;
+  justify-items: left;
+}
+.sidebar-items:hover {
+  background: #cbd5e0;
+  color: #000;
+}
+
+.product-items {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 12px;
+  box-shadow: 10px 5px 63px -26px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 10px 5px 63px -26px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 5px 63px -26px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 10px;
+  text-decoration: none;
+}
+.product-items:hover {
+  transform: scale(1.03);
+}
+.contacts:hover {
+  transform: scale(1.03);
+}
+.icona {
+  font-size: 35px;
+}
+.product-img {
+  width: 100%;
+  height: 16vw;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.custom-image {
+  width: 100%;
+  height: 7vw;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.payment-image {
+  width: 100%;
+  height: 7vw;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.navprofile {
+  display: flex;
+  align-items: center;
+}
+
+.navprofilename {
+  font-size: 1vw;
+  margin-left: 10px;
+}
+.btnseller {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  border-radius: 30px;
+  align-items: right;
+  background-color: #4eaf4e;
+  box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.13);
+  padding: 10px 20px;
+}
+
+.pull-right {
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+}
+.modaldesc-img {
+  width: 10px;
+  height: 18vw;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.modaldesc-detail {
+  margin-left: 20px;
+}
+.h-80 {
+  height: 18rem;
+  width: 19rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.pop {
+  border-radius: 10px;
+  height: 35rem;
+}
+
+.black_btn {
+  height: 50px;
+  width: 120px;
+  object-fit: cover;
+}
+.cartitem {
+  box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.13);
+}
+.checkout {
+  margin-right: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.btnw {
+  background-color: transparent; /* ตั้งค่าพื้นหลังเป็นโปร่งใส */
+  border: none; /* ลบเส้นขอบ */
+  cursor: pointer; /* แสดงเคอร์เซอร์เป็นตัวชี้ช่วย */
+  transform: scale(1.03);
+}
+
+.iconss {
+  font-size: 30px; /* ปรับขนาดไอคอนตามที่ต้องการ */
+  color: #dfdfdf;
+  transform: scale(1.03);
+}
+
+.ending {
+  margin-bottom: 20px;
+}
+
+/* สำหรับเนื้อหาทั้งหมดภายใน Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #f3f4f6;
+  padding: 20px;
+  position: sticky;
+  top: 0; /* ค่า top ระบุว่า sidebar จะเลื่อนเมื่อหน้าเว็บอยู่ที่จุดบนสุดของ viewport */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* สำหรับลิงก์ในเมนู */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #e2e8f0;
+  color: #000;
+}
+
+/* สำหรับไอคอนในลิงก์ */
+.sidebar svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* สำหรับหัวข้อเมนู */
+.sidebar .font-bold {
+  font-weight: bold;
+}
+
+/* สำหรับลิงก์ที่เป็นเมนูหลัก */
+.sidebar .main-link {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .main-link:hover {
+  background-color: #f0f4f8;
+  color: #000;
+}
+
+/* สำหรับรูปแบบแยกเมนูย่อย */
+.sidebar .sub-menu {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #cbd5e0;
+}
+.report {
+  position: fixed;
+  bottom: 20px; /* ระยะห่างจากด้านล่างของหน้า */
+  right: 20px; /* ระยะห่างจากด้านขวาของหน้า */
+  z-index: 999; /* ค่า z-index เพื่อให้ปุ่มอยู่ด้านบนสุดของหน้า */
+}
+
+.slides {
+  width: 70%; /* กำหนดความกว้างให้เต็มหน้าจอ */
+  height: 50%; /* กำหนดความสูงตามที่คุณต้องการ */
+  position: relative; /* กำหนดให้เป็นตำแหน่งสำหรับภาพสไลด์ */
+  overflow: hidden; /* กำหนดให้ภาพสไลด์ที่เกินขอบจอไม่แสดง */
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: slide-show 12s infinite;
+  transition: opacity 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงความโปร่งใสเพื่อลดความเร็วของอนิเมชัน */
+}
+
+.slide--2 {
+  animation-delay: 4s;
+}
+
+.slide--3 {
+  animation-delay: 8s;
+}
+
+.slide_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide-show {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20%,
+  30% {
+    opacity: 1;
+    transform: scale(1.05); /* เพิ่มการขยายขนาดของภาพเล็กน้อย */
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto md:px-0 px-6;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm  flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm  flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+.search_input {
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5   pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+.prompt_layout {
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+/* Feed Component */
+.feed {
+  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply max-sm:hidden   font-semibold text-lg text-black tracking-wide;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm   text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* PromptCard Component */
+.prompt_card {
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
